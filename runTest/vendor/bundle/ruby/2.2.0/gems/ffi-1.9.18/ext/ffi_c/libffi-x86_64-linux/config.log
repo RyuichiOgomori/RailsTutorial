@@ -28,7 +28,7 @@ uname -v = #1 SMP Mon Oct 24 16:09:20 UTC 2016
 /bin/universe          = unknown
 
 PATH: /usr/local/rbenv/versions/2.2.5/bin
-PATH: /root/.rbenv/libexec
+PATH: /usr/local/rbenv/libexec
 PATH: /usr/local/rbenv/shims
 PATH: /root/.rbenv/bin
 PATH: /usr/local/rbenv/shims

@@ -1,4 +1,4 @@
-/usr/local/rbenv/versions/2.2.5/bin/ruby -r ./siteconf20170611-4975-7cmx55.rb extconf.rb
+/usr/local/rbenv/versions/2.2.5/bin/ruby -r ./siteconf20170624-3175-1owk0g5.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for shlwapi.h... no
@@ -164,4 +164,4 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.so
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20170611-4975-5j8wu7
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20170624-3175-f0g8lw

@@ -1,18 +1,22 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+
   root 'static_pages#home'
 
   get 'demo/index'
 
   # get 'static_pages/home'
 
-  get 'static_pages/help'
+  get '/help', to:'static_pages#help'
 
-  get 'static_pages/about'
+  get '/about', to:'static_pages#about'
 
-  get 'static_pages/contact'
+  get '/contact', to:'static_pages#contact'
 
   get 'demo/show'
+
+  get '/signup', to:'users#new'
 
   # match 'travels/show/:id' => 'travels#show'
   get 'demo/show/:id' => 'demo#show'

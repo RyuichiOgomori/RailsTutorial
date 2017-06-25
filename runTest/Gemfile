@@ -15,6 +15,11 @@ gem 'rails-controller-testing'
         # add `gem 'rails-controller-testing'` to your Gemfile.
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use Mysql
+gem 'mysql2'
+#Use hashfunc
+gem 'bcrypt', '3.1.11'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

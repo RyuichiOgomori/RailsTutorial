@@ -13,7 +13,7 @@ development:
   <<: *default
   adapter: mysql2
   encoding: utf8
-  database: rails_turorial
+  database: rails_tutorial
   pool: 5
   username: root
   password: humanway
@@ -27,7 +27,7 @@ test:
   <<: *default
   adapter: mysql2
   encoding: utf8
-  database: rails_turorial
+  database: rails_tutorial
   pool: 5
   username: root
   password: humanway

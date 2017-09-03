@@ -4143,3 +4143,244 @@ Migrating to AddPasswordDigestToUsers (20170625062014)
   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
   [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE `users` SET `name` = 'Michael Hartle', `updated_at` = '2017-06-25 11:53:44' WHERE `users`.`id` = 980190982[0m
   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:26:26 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::NoDatabaseError (Unknown database 'rails_turorial'):
+  
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in mysql2_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/connection_handling.rb:91:in `connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/migration.rb:559:in `connection'
+vendor/bundle/ruby/2.2.0/gems/activerecord-5.0.4/lib/active_record/migration.rb:546:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+vendor/bundle/ruby/2.2.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.2.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.2.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.2.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.2.0/gems/railties-5.0.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.2.0/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.2.0/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+vendor/bundle/ruby/2.2.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.2.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.2.0/gems/activesupport-5.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/static.rb:136:in `call'
+vendor/bundle/ruby/2.2.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.2.0/gems/railties-5.0.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.2.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.2.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.2.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.2.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.2.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `call'
+vendor/bundle/ruby/2.2.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.2ms)
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE DATABASE `rails_turorial` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `rails_turorial` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1220759781633075495', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20170624073345)
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170624073345')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIndexToUsersEmail (20170625044443)
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170625044443')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20170625062014)
+  [1m[35m (10.4ms)[0m  [1m[35mALTER TABLE `users` ADD `password_digest` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170625062014')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-09-03 14:29:33', '2017-09-03 14:29:33')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1220759781633075495')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:20 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (290.6ms)
+  Rendered layouts/_rails_default.html.erb (80.2ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 401ms (Views: 383.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:23 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_rails_default.html.erb (40.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:25 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (71.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:25 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_rails_default.html.erb (62.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:26 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (45.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 27.81.54.215 at 2017-09-03 23:30:27 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (38.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:32 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_rails_default.html.erb (36.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:34 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (32.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 27.81.54.215 at 2017-09-03 23:30:35 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (36.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.81.54.215 at 2017-09-03 23:30:37 +0900
+Cannot render console from 27.81.54.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (31.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE `rails_tutorial` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `rails_tutorial` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8447966477719091190', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20170624073345)
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170624073345')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIndexToUsersEmail (20170625044443)
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170625044443')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20170625062014)
+  [1m[35m (9.1ms)[0m  [1m[35mALTER TABLE `users` ADD `password_digest` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170625062014')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-09-03 14:43:54', '2017-09-03 14:43:54')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8447966477719091190')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
